@@ -10,6 +10,11 @@
             document.getElementById('message').style.display = 'block';
             document.getElementById('button').style.display = 'none';
         }
+
+        function hideMessage() {
+            document.getElementById('message').style.display = 'none';
+            document.getElementById('button').style.display = 'block';
+        }
     </script>
 </head>
 <body>
@@ -17,7 +22,11 @@
         <h1>Hey there!</h1>
         <p>Want to see something funny?</p>
         <button id="button" class="button" onclick="showMessage()">Click me!</button>
-        <p id="message" class="hidden-message">You just pressed a button for no reason! 😂</p>
+        <div id="message" class="hidden-message">
+            <p>You just pressed a button for no reason! 😂</p>
+            <button class="close-button" onclick="hideMessage()">Close</button>
+        </div>
     </div>
 </body>
 </html>
+
