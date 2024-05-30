@@ -5,17 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Surprise!</title>
     <link rel="stylesheet" href="button.css">
-    <script>
-        function showMessage() {
-            document.getElementById('message').style.display = 'block';
-            document.getElementById('button').style.display = 'none';
-        }
-
-        function hideMessage() {
-            document.getElementById('message').style.display = 'none';
-            document.getElementById('button').style.display = 'block';
-        }
-    </script>
 </head>
 <body>
     <div class="container">
@@ -27,6 +16,29 @@
             <button class="close-button" onclick="hideMessage()">Close</button>
         </div>
     </div>
+    Sure! Here’s an updated version of the HTML, CSS, and a new JavaScript file to separate the functionality.
+
+### HTML File (`index.html`)
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise!</title>
+    <link rel="stylesheet" href="button.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hey there!</h1>
+        <p>Want to see something funny?</p>
+        <button id="button" class="button" onclick="showMessage()">Click me!</button>
+        <div id="message" class="hidden-message">
+            <p>You just pressed a button for no reason! 😂</p>
+            <button class="close-button" onclick="hideMessage()">Close</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
 
